@@ -12,8 +12,9 @@ Please contribute if you'd like! Any help is appreciated. Need help thinking of 
 #### Follow the instructions in the game, and have fun!
 
 ### Todo:
-    1) Actually implement settings menu
-    2) Add graphics (OpenGL or SFML)
-    3) Add quests (./headers/quest.h)
+    1) Fix naming conventions for compatibility with any C++ compiler (sorry Mac people)
+    2) Actually implement settings menu
+    3) Add graphics (OpenGL or SFML)
+    4) Add quests (./headers/quest.h)
 
 ### Known bugs: None (just fixed issue where pick didn't erase from ground, stupid mistake lmao)
