@@ -35,6 +35,7 @@ int main() { // Story starts from here, core functionality is in the decision() 
       std::getline(std::cin, op);
     }
     if (tolower(op[0]) == 't') {
+      cout << name << endl;
       cout << story[progress] << name << story[progress + 1]; progress += 2;
       currentSect.putOnGround(dullSword);
       currentSect.putOnGround(chippedHelmet);
@@ -97,6 +98,7 @@ int main() { // Story starts from here, core functionality is in the decision() 
     stat["Current HP"] = stat["HP"];
     std::cout << name << std::endl;
 }
+  else progress += 6;
   std::string guideName;
   std::cout << story[progress]; progress++;
   std::cout << story[progress]; progress++;
@@ -104,12 +106,13 @@ int main() { // Story starts from here, core functionality is in the decision() 
   std::cout << story[progress]; progress++;
   std::getline(std::cin, guideName);
   npc* guide = new npc(guideName, "guide");
-  std::cout << "Huh, " << guide -> getName() << story[progress]; progress++;
-  std::cout << story[progress]; progress++;
+  std::cout << "GUIDE: Huh, " << guide -> getName() << story[progress]; progress++;
+  std::cout << guideName << story[progress]; progress++;
   sleep(seconds * 1500); // Longer wait since this is a LOT of text
   std::cout << "\033[2J"; // Clear screen (multiplatform, system("CLS | clear") is annoying)
   std::cout << "\033[1;1H"; // Move cursor to the top left of the screen
   std::cout << story[progress]; progress++;
   if (next() == 'q') return 0;
+  std::cout << guideName << story[progress]; progress++;
   return 0;
 }

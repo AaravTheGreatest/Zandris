@@ -6,5 +6,4 @@ src/build/*
 main.s
 build/*
 *.xcf
-textGame
-
+*.mp3
